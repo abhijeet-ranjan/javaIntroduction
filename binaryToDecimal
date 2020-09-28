@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Main {
+	
+	public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
+        scan.close();
+        int multiplier = 1;
+        int number = 0;
+        int i = 1;
+        while(n>0){
+            int alpha = n%10;
+            number = number + alpha*multiplier;
+        //   System.out.println(multiplier);
+            multiplier *=2;
+            n = n/10;
+            i++;
+        }
+        System.out.println(number);
+	}
+}
+              
